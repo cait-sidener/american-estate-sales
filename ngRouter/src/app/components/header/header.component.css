@@ -1,0 +1,15 @@
+a:link, :visited, :hover, :active {
+  color: #000;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
