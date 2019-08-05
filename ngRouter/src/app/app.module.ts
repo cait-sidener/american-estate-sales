@@ -13,6 +13,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import appRoutes from './routerConfig';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,12 +24,13 @@ import { FooterComponent } from './components/footer/footer.component';
     SalesComponent,
     ContactComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
