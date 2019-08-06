@@ -38,8 +38,6 @@
   height: 100%;
 }
 
-
-
 .container {
   font-family: 'Raleway', sans-serif;
   font-size: 1.3em;
@@ -47,3 +45,7 @@
   margin: 50px 300px 0 300px;
 }
 
+.slick-slider {
+  width: 90%;
+  margin: auto;
+}

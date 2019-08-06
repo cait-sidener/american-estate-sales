@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // firebase: {
+  //   apiKey: 'AIzaSyD31lvD2X_0LC3ePTGQ72tsKiIUiL2Rydk',
+  //   authDomain: 'american-estate-sales-1f8e4.firebaseapp.com',
+  //   databaseURL: 'https://american-estate-sales-1f8e4.firebaseio.com',
+  //   projectId: 'american-estate-sales-1f8e4',
+  //   storageBucket: '',
+  //   messagingSenderId: '523988112783',
+  //   appId: '1:523988112783:web:9a3371af88115e42'
+  // }
 };
 
 /*
