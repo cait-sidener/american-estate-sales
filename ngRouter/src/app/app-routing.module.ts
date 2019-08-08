@@ -14,6 +14,7 @@ const routes: Routes = [
   {
     path: 'sales',
     component: SalesComponent
+
   },
   {
     path: 'about',

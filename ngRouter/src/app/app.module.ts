@@ -11,7 +11,7 @@ import { ServicesNavComponent } from './components/services-nav/services-nav.com
 import { SalesComponent } from './components/sales/sales.component';
 import { ContactComponent } from './components/contact/contact.component';
 
-import appRoutes from './routerConfig';
+import { appRoutes } from './routerConfig';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -29,7 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes),
+    // RouterModule.forRoot(appRoutes),
     AppRoutingModule,
     BrowserAnimationsModule,
     SlickCarouselModule

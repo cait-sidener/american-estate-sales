@@ -4,7 +4,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SalesComponent } from './components/sales/sales.component';
 
-const appRoutes: Routes = [
+export const appRoutes: Routes = [
   { path: 'home',
     component: HomeComponent
   },
@@ -19,4 +19,3 @@ const appRoutes: Routes = [
   }
 ];
 
-export default appRoutes;
