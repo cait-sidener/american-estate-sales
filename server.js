@@ -1,22 +1,17 @@
-'use strict';
-const express = require('express');
-const compression = require('compression');
 
-const _port = process.env.PORT || 4100;
-const _app_folder = 'dist/ngRouter';
+//Install express server
+const express = require('express');
+const path = require('path');
 
 const app = express();
-app.use(compression());
 
-// ---- SERVE STATIC FILES ---- //
-app.get('*.*', express.static(_app_folder, { maxAge: '1y' }));
+// Serve only the static files form the dist directory
+app.use(express.static(__dirname + '/dist/american-estate-sales'));
 
-// ---- SERVE APLICATION PATHS ---- //
-app.all('*', function(req, res) {
-  res.status(200).sendFile(`/`, { root: _app_folder });
+app.get('/*', function(req,res) {
+    
+res.sendFile(path.join(__dirname+'/dist/american-estate-sales/index.html'));
 });
 
-// ---- START UP THE NODE SERVER  ----
-app.listen(_port, function() {
-  console.log('Node Express server for ' + app.name + ' listening on http://localhost:' + _port);
-});
+// Start the app by listening on the default Heroku port
+app.listen(process.env.PORT || 8080);
